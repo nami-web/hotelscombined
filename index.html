@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>호텔스컴바인</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+<!--  파비콘  -->
+    <link href="images/favicon.png" type="image" rel="shortcut icon">
+    <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
+    
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+      $(document).ready(function(){
+          //주메뉴에 마우스 올리면 서브메뉴 내려옴
+          //stop() 메서드 : 메모리 스택(stack)에 저장된 제이쿼리 명령어를 삭제 ,  순서대로 입력해야함(규칙)
+          $('nav>ul>li').hover(function(){
+             $('.sub').stop().slideDown();
+             $('.sub_bg').stop().slideDown();  
+          },function(){
+             $('.sub').stop().slideUp();
+             $('.sub_bg').stop().slideUp(); 
+          });
+          
+         $('.slider').bxSlider({
+             auto:true
+         });  
+          
+           
+          
+      });
+    </script>
+
+</head>
+
+<body>
+   <div class="wrap">
+     
+      <header>
+            <div class="box_center">
+                  <div class="h_sns">
+                     <ul>
+                         <li><a href="https://www.facebook.com/HotelsCombinedKorea" target="_blank"><img src="images/facebook.png" alt="페이스북"></a></li>
+                         <li><a href="https://www.instagram.com/hotelscombined.kr/" target="_blank"><img src="images/insta.png" alt="인스타그램"></a></li>
+                         <li><a href="https://www.youtube.com/channel/UC4Kx7cwhzWMT8o1jSkw1U4Q" target="_blank"><img src="images/youtube.png" alt="유투브"></a></li>
+                         <li><a href="http://blog.naver.com/hotelscombnd" target="_blank"><img src="images/twitter.png" alt="트위터"></a></li>
+                     </ul> 
+                  </div>
+                  
+                  <div class="logo">
+                     <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+                  </div>
+                  
+                  <div class="custom">
+                      <ul>
+                          <li><a href="#">고객센터｜</a></li>
+                          <li><a href="#">CONTACT US</a></li>
+                          <li><a href="#"><img src="images/search.png" alt="검색"></a></li>
+                      </ul>
+                  </div>
+            </div>
+              
+              
+<!--          내비게이션        -->
+          <div class="navi">
+            <div class="navi_in">
+             
+              <div class="navi_left">
+                 <ul>
+                     <li><a href="#">LOGIN</a></li>
+                     <li><a href="#">JOIN</a></li>
+                 </ul>
+             </div>
+              
+              <nav>
+                <ul>
+                   <li>
+                       <a href="menu.html">호텔</a>
+                       <ul class="sub">
+                          <li><a href="menu.html">갤러리</a></li>
+                          <li><a href="menu.html">객실</a></li>
+                          <li><a href="menu.html">다이닝</a></li>
+                          <li><a href="menu.html">주변지역</a></li>
+                          <li><a href="menu.html">프로모션</a></li>
+                       </ul>
+                   </li>
+                   
+                   <li>
+                       <a href="#">항공권</a>
+                       <ul class="sub">
+                          <li><a href="#">국내특가</a></li>
+                          <li><a href="#">해외특가</a></li>
+                          <li><a href="#">실시간 항공권</a></li>
+                          <li><a href="#">항공권 혜택</a></li>
+                       </ul>
+                   </li>
+                   
+                   <li>
+                       <a href="#">렌터카</a>
+                       <ul class="sub">
+                          <li><a href="#">보유차량</a></li>
+                          <li><a href="#">국산차</a></li>
+                          <li><a href="#">수입차</a></li>
+                          <li><a href="#">사고대차</a></li>
+                       </ul>
+                   </li>
+                   
+                   <li>
+                       <a href="#">액티비티</a>
+                       <ul class="sub">
+                          <li><a href="#">오늘의 핫딜</a></li>
+                          <li><a href="#">특가상품</a></li>
+                       </ul>
+                   </li>
+                   
+                   <li>
+                       <a href="#">이벤트</a>
+                       <ul class="sub">
+                          <li><a href="#">진행중인 이벤트</a></li>
+                          <li><a href="#">당첨자발표</a></li>
+                       </ul>
+                   </li>
+                   
+                   <li>
+                       <a href="#">공지사항</a>
+                       <ul class="sub">
+                          <li><a href="#">자주 묻는 질문</a></li>
+                          <li><a href="#">1:1 문의</a></li>
+                       </ul>
+                   </li>
+                   
+                </ul>                  
+              </nav> 
+             </div>
+             
+<!--         서브메뉴 배경    -->
+         <div class="sub_bg"><img src="images/sub_img.png" alt="조정석"></div>
+          </div>  
+          
+      </header> 
+      
+      
+      
+      
+<!--   슬라이드    -->
+      <section class="slide slider">
+        
+             
+             <div><a href="#"><img src="images/slide1.jpg" alt="파라다이스호텔 프로모션"></a></div>
+             <div><a href="#"><img src="images/slide2.jpg" alt="제주아일랜드"></a></div>
+             <div><a href="#"><img src="images/slide3.jpg" alt="싱가폴"></a></div>
+         
+          
+<!--
+         <a href="#" class="prev"><img src="images/prev.png" alt="이전"></a>
+         <a href="#" class="next"><img src="images/next.png" alt="다음"></a>
+-->
+         
+         
+       </section>  
+       
+          
+                
+<!--     폼     -->
+         <div class="form">
+             <p><span>객실 1개, 투숙객 2명</span><a href="#"><img src="images/arrow_down.png" alt="객실 투숙객"></a></p>
+             
+            <form action="">
+             <div class="name">
+                 <button><a href="#"><img src="images/search2.png" alt="검색"></a></button>
+               <input type="text" placeholder="도시 또는 호텔명을 검색해 보세요.">
+             </div>
+              
+              <div class="check c1">
+                <a href="#"><img src="images/cal.png" alt="캘린더"></a>
+                <input type="text" placeholder="체크인" >
+              </div>   
+              
+              <div class="check c2">
+                <a href="#"><img src="images/cal.png" alt="캘린더"></a>
+                <input type="text" placeholder="체크아웃">
+              </div>  
+              
+              <button class="search"><a href="#">검색하기</a></button>
+              
+            </form> 
+              
+         </div>
+         
+      
+    
+        
+      
+<!--   이벤트    -->
+      <section class="hotels">
+          <div class="box_center">
+             <h1><img src="images/popular_hotels.png" alt="인기있는호텔들"></h1>
+             <ul>
+                 <li>
+                     <a href="https://www.skybay.co.kr/" target="_blank">
+                       <img src="images/popular_1.jpg" alt="스카이베이호텔">
+                       <div class="des">
+                           <h3>스카이베이 호텔 경포</h3>
+                           <div class="star"><img src="images/star_1.png" alt="별점">7.6</div>
+                           <p>강릉, 대한민국</p>
+                       </div>
+                     </a>
+                 </li>
+                 
+                 <li>
+                     <a href="https://new.stjohns.co.kr/" target="_blank">
+                       <img src="images/popular_2.jpg" alt="세인트존스호텔">
+                       <div class="des">
+                           <h3>세인트존스 호텔</h3>
+                           <div class="star"><img src="images/star_1.png" alt="별점">8.2</div>
+                           <p>강릉, 대한민국</p>
+                       </div>
+                     </a>
+                 </li>
+                 
+                 <li>
+                     <a href="https://www.shilla.net/jeju/index.do" target="_blank">
+                       <img src="images/popular_3.jpg" alt="제주신라호텔">
+                       <div class="des">
+                           <h3>제주 신라호텔</h3>
+                           <div class="star2"><img src="images/star_2.png" alt="별점">8.9</div>
+                           <p>서귀포시, 대한민국</p>
+                       </div>
+                     </a>
+                 </li>
+                 
+                 <li>
+                     <a href="https://hiltonbusan.co.kr/kor/" target="_blank">
+                       <img src="images/popular_4.jpg" alt="아난티힐튼">
+                       <div class="des">
+                           <h3>아난티 힐튼</h3>
+                           <div class="star2"><img src="images/star_2.png" alt="별점">8.5</div>
+                           <p>부산, 대한민국</p>
+                       </div>
+                     </a>
+                 </li>
+             </ul> 
+             
+             <div class="more">
+                 <a href="#"><img src="images/more_info.jpg" alt="더보기"></a>
+             </div>
+          </div>
+      </section>
+      
+      
+      
+      <section class="menu">
+          <div class="box_center">
+             <h1><img src="images/travel_destination.jpg" alt="여행지"></h1>
+             <div class="menu_wrap">
+                 <div class="m1">
+                   <a href="#"><img src="images/korea.jpg" alt="대한민국 경복궁"></a>
+                 </div>
+                 <div class="m2">
+                   <a href="#"><img src="images/thailand.jpg" alt="태국 푸켓"></a>
+                 </div>
+                 <div class="m3">
+                   <a href="#"><img src="images/newyork.jpg" alt="미국 뉴욕"></a>
+                 </div>
+                 <div class="m4">
+                   <a href="#"><img src="images/swiss.jpg" alt="스위스"></a>
+                 </div>
+                 <div class="m5">
+                   <a href="#"><img src="images/france.jpg" alt="프랑스 에펠탑"></a>
+                 </div>
+                 <div class="m6">
+                   <a href="#"><img src="images/hongkong.jpg" alt="홍콩"></a>
+                 </div>
+             </div>
+          </div>  
+      </section>
+      
+      
+      
+      <section class="event">
+          <div class="box_center">
+              <h1><img src="images/event.jpg" alt="이벤트"></h1>
+              <ul>
+                  <li><a href="#"><img src="images/event1.jpg" alt="10월 제휴 할인 혜택 모음"></a></li>
+                  <li><a href="#"><img src="images/event2.jpg" alt="n포인트 적립 이벤트"></a></li>
+              </ul>
+          </div>
+      </section>
+      
+      
+      
+      <section class="sns">
+          <div class="box_center">
+             <h1><img src="images/sns.jpg" alt="sns"></h1>
+            
+             <ul class="sns_logo">
+               <li><a href="https://www.facebook.com/HotelsCombinedKorea" target="_blank"><img src="images/facebook.png" alt="페이스북"></a></li>  
+               <li><a href="https://www.instagram.com/hotelscombined.kr/" target="_blank"><img src="images/insta.png" alt="인스타그램"></a></li> 
+               <li><a href="https://www.youtube.com/channel/UC4Kx7cwhzWMT8o1jSkw1U4Q" target="_blank"><img src="images/youtube.png" alt="유투브"></a></li> 
+               <li><a href="http://blog.naver.com/hotelscombnd" target="_blank"><img src="images/twitter.png" alt="트위터" ></a></li>   
+             </ul>
+             
+             
+             <div class="instagram">
+                 <div class="b_left"><img src="images/insta_border.jpg" alt="선"></div> 
+                 <h2><img src="images/instagram.jpg" alt="sns 인스타그램"></h2>
+                 <div class="b_right"><img src="images/insta_border.jpg" alt="선"></div>                 
+             </div>
+             
+             
+             <ul class="insta_photo">
+                  <li><a href="https://www.instagram.com/hotelscombined.kr/" target="_blank"><img src="images/insta1.jpg" alt="인스타1"></a></li>
+                  <li><a href="https://www.instagram.com/hotelscombined.kr/" target="_blank"><img src="images/insta2.jpg" alt="인스타2"></a></li>
+                  <li><a href="https://www.instagram.com/hotelscombined.kr/" target="_blank"><img src="images/insta3.jpg" alt="인스타3"></a></li>
+                  <li><a href="https://www.instagram.com/hotelscombined.kr/" target="_blank"><img src="images/insta4.jpg" alt="인스타4"></a></li>
+                  <li><a href="https://www.instagram.com/hotelscombined.kr/" target="_blank"><img src="images/insta5.jpg" alt="인스타5"></a></li>
+                  <li><a href="https://www.instagram.com/hotelscombined.kr/" target="_blank"><img src="images/insta6.jpg" alt="인스타6"></a></li>
+                  <li><a href="https://www.instagram.com/hotelscombined.kr/" target="_blank"><img src="images/insta7.jpg" alt="인스타7"></a></li>
+                  <li><a href="https://www.instagram.com/hotelscombined.kr/" target="_blank"><img src="images/insta8.jpg" alt="인스타8"></a></li>
+                  <li><a href="https://www.instagram.com/hotelscombined.kr/" target="_blank"><img src="images/insta9.jpg" alt="인스타9"></a></li>
+                  <li><a href="https://www.instagram.com/hotelscombined.kr/" target="_blank"><img src="images/insta10.jpg" alt="인스타10"></a></li>
+             </ul>
+          </div>
+      </section>
+      
+      
+      
+      
+    
+      <footer>
+        <div class="f_wrap">
+           <ul class="f_nav">
+              <li><a href="#">회사정보</a></li>
+              <li><a href="#">연락처</a></li>
+              <li><a href="#">더보기</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">쿠키정책</a></li>
+              <li><a href="#">사이트/통화</a></li>
+           </ul>
+        </div> 
+         
+         
+         
+          <div class="box_center">
+              <div class="company">
+                  <div class="com1"><a href="https://www.booking.com/index.ko.html?aid=373003;label=naver-brand-pc-list3" target="_blank"><img src="images/booking_com.png" alt="부킹컴"></a></div>
+                  <div class="com2"><a href="https://www.kayak.co.kr/?ispredir=true" target="_blank"><img src="images/kayak.png" alt="카약"></a></div>
+                  <div class="com3"><a href="https://www.opentable.com/" target="_blank"><img src="images/opentable.png" alt="오픈1테이블"></a></div>
+                  <div class="com4"><a href="https://www.priceline.com/?vrid=c34a29b296d3f64193fb425410328f55" target="_blank"><img src="images/priceline.png" alt="프라이스 라인"></a></div>
+                  <div class="com5"><a href="https://www.agoda.com/ko-kr/?cid=1719676" target="_blank"><img src="images/agoda.png" alt="아고다"></a></div>
+                  <div class="com6"><a href="https://www.rentalcars.com/?affiliateCode=naver&preflang=ko&label=rentalcars.com-brand" target="_blank"><img src="images/rentalcars.png" alt="렌터카"></a></div>
+              </div> 
+          </div>
+          
+          
+          <div class="txt">
+              <p>ⓒ2021 HotelsCombined</p>              
+              <p>KAYAK에서 저가 호텔을 검색하세요. 전 세계 주요 여행지의 저가 호텔 상품을 만나보세요. KAYAK은 수백 개의 호텔 사이트를 검색하여, 고객님께서 본인에게 딱 맞는 호텔 상품을 찾아 예약하실 수 있도록<br>도와드립니다.  KAYAK이 다양한 호텔 사이트를 한 번에 검색하기 때문에, 할인 호텔 상품을 신속하게 찾으실 수 있습니다. 호텔 할인 정보를 확인하고 호텔 예약을 지금 바로 마치세요.</p>
+              
+              <ul class="f_sns">
+              <li><a href="https://www.facebook.com/HotelsCombinedKorea" target="_blank">
+                  <img src="images/f_facebook.png" alt="페이스북">
+              </a></li>
+              <li><a href="https://www.instagram.com/hotelscombined.kr/" target="_blank">
+                  <img src="images/f_insta.png" alt="인스타그램">
+              </a></li>
+              <li><a href="https://www.youtube.com/channel/UC4Kx7cwhzWMT8o1jSkw1U4Q" target="_blank"><img src="images/f_youtube.png" alt="유투브"></a></li>
+              <li><a href="http://blog.naver.com/hotelscombnd" target="_blank"><img src="images/f_twitter.png" alt="트위터"></a></li>
+              </ul>
+              
+          </div>
+               
+         <div class="txt2">       
+          <p>호텔스컴바인은 세계적인 온라인 여행 기업 ‘부킹홀딩스(Booking Holdings Inc.)’의 그룹사입니다.</p>
+         </div>          
+      </footer>
+      
+   </div> 
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

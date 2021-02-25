@@ -1,0 +1,613 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>호텔스컴바인</title>
+<!--   메인 css 연결   -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+<!--   서브 css 연결   -->
+    <link rel="stylesheet" href="css/sub_menu.css" type="text/css">
+<!--  파비콘  -->
+    <link href="images/favicon.png" type="image" rel="shortcut icon">
+    
+    <script src="js/jquery-3.5.1.js"></script>
+    <script>
+    
+      $(document).ready(function(){
+          //주메뉴에 마우스 올리면 서브메뉴 내려옴
+          //stop() 메서드 : 메모리 스택(stack)에 저장된 제이쿼리 명령어를 삭제 ,  순서대로 입력해야함(규칙)
+          $('nav>ul>li').hover(function(){
+             $('.sub').stop().slideDown();
+             $('.sub_bg').stop().slideDown();  
+          },function(){
+             $('.sub').stop().slideUp();
+             $('.sub_bg').stop().slideUp(); 
+          });
+          
+        
+           
+          
+      });
+    </script>
+        
+
+</head>
+
+<body> 
+   <div class="wrap">
+     
+      <header>
+            <div class="box_center">
+                  <div class="h_sns">
+                     <ul>
+                         <li><a href="https://www.facebook.com/HotelsCombinedKorea" target="_blank"><img src="images/facebook.png" alt="페이스북"></a></li>
+                         <li><a href="https://www.instagram.com/hotelscombined.kr/" target="_blank"><img src="images/insta.png" alt="인스타그램"></a></li>
+                         <li><a href="https://www.youtube.com/channel/UC4Kx7cwhzWMT8o1jSkw1U4Q" target="_blank"><img src="images/youtube.png" alt="유투브"></a></li>
+                         <li><a href="http://blog.naver.com/hotelscombnd" target="_blank"><img src="images/twitter.png" alt="트위터"></a></li>
+                     </ul> 
+                  </div>
+                  
+                  <div class="logo">
+                     <a href="index.html"><img src="images/logo.png" alt="로고"></a>
+                  </div>
+                  
+                  <div class="custom">
+                      <ul>
+                          <li><a href="#">고객센터｜</a></li>
+                          <li><a href="#">CONTACT US</a></li>
+                          <li><a href="#"><img src="images/search.png" alt="검색"></a></li>
+                      </ul>
+                  </div>
+            </div>
+              
+              
+<!--          내비게이션        -->
+          <div class="navi">
+            <div class="navi_in">
+             
+              <div class="navi_left">
+                 <ul>
+                     <li><a href="#">LOGIN</a></li>
+                     <li><a href="#">JOIN</a></li>
+                 </ul>
+             </div>
+              
+              <nav>
+                <ul>
+                   <li>
+                       <a href="menu.html">호텔</a>
+                       <ul class="sub">
+                          <li><a href="menu.html">갤러리</a></li>
+                          <li><a href="menu.html">객실</a></li>
+                          <li><a href="menu.html">다이닝</a></li>
+                          <li><a href="menu.html">주변지역</a></li>
+                          <li><a href="menu.html">프로모션</a></li>
+                       </ul>
+                   </li>
+                   
+                   <li>
+                       <a href="#">항공권</a>
+                       <ul class="sub">
+                          <li><a href="#">국내특가</a></li>
+                          <li><a href="#">해외특가</a></li>
+                          <li><a href="#">실시간 항공권</a></li>
+                          <li><a href="#">항공권 혜택</a></li>
+                       </ul>
+                   </li>
+                   
+                   <li>
+                       <a href="#">렌터카</a>
+                       <ul class="sub">
+                          <li><a href="#">보유차량</a></li>
+                          <li><a href="#">국산차</a></li>
+                          <li><a href="#">수입차</a></li>
+                          <li><a href="#">사고대차</a></li>
+                       </ul>
+                   </li>
+                   
+                   <li>
+                       <a href="#">액티비티</a>
+                       <ul class="sub">
+                          <li><a href="#">오늘의 핫딜</a></li>
+                          <li><a href="#">특가상품</a></li>
+                       </ul>
+                   </li>
+                   
+                   <li>
+                       <a href="#">이벤트</a>
+                       <ul class="sub">
+                          <li><a href="#">진행중인 이벤트</a></li>
+                          <li><a href="#">당첨자발표</a></li>
+                       </ul>
+                   </li>
+                   
+                   <li>
+                       <a href="#">공지사항</a>
+                       <ul class="sub">
+                          <li><a href="#">자주 묻는 질문</a></li>
+                          <li><a href="#">1:1 문의</a></li>
+                       </ul>
+                   </li>
+                   
+                </ul>                  
+              </nav> 
+             </div>
+             
+<!--         서브메뉴 배경    -->
+         <div class="sub_bg"><img src="images/sub_img.png" alt="조정석"></div>
+          </div>  
+          
+      </header> 
+      
+      
+      <section class="sub_title">
+        <div class="hotel_menu"><img src="images/hotels_menu.jpg" alt="호텔 배너"></div>          
+      </section>
+      
+
+      <section class="best_month">
+        <h1><img src="images/best_of_the_month.jpg" alt="이 달 베스트 호텔"></h1>  
+        <div class="best_month_in">
+            
+            <div class="photo"><a href="https://seoul.intercontinental.com/grandicparnas" target="_blank"><img src="images/intercontinental_hotels.jpg" alt="인터컨티넨탈 호텔"></a></div>
+            <div class="inter_wrap">
+                <div class="logo"><a href="https://seoul.intercontinental.com/grandicparnas" target="_blank"><img src="images/intercontinental.jpg" alt="인터컨티넨탈 로고"></a></div>
+                <div class="txt">
+                    <p>그랜드 인터컨티넨탈 서울 파르나스에서 진정한 럭셔리의 기준을 제시합니다.</p>
+                    <p>멀리 떠날 수 없는 요즘, 사랑하는 사람 또는 가족과 함께 프라이빗하게 객실에서 소중한 순간을 만끽하세요. <br> 1월 31일까지 단독 주중 무료 조식 2인의 혜택도 놓치지 마세요!</p>
+                </div>
+                <div class="reser"><a href="https://seoul.intercontinental.com/grandicparnas" target="_blank"><img src="images/reservation.jpg" alt="예약하기"></a></div>
+            </div>
+        </div>  
+          
+      </section>    
+          
+           
+            
+            
+             
+               
+            
+      <section class="sub_menu">
+          <h1><img src="images/today_hotels.jpg" alt="오늘의 호텔"></h1>
+          
+          <ul class="smenu_wrap">
+            
+             <li>
+               <div class="photo"><a href="http://www.ramadajejucity.com/index.php" target="_blank"><img src="images/today_hotels1.jpg" alt="라마다 제주 시티 호텔"></a></div>
+               <div class="smenu_in">    
+                  <div class="smenu_t">
+                      <div class="txt">
+                          <h3>라마다 제주 시티 호텔</h3>
+                          <p>중앙로 304, 제주, 제주도, 대한민국</p>
+                          <h4>훌륭한 가성비</h4>
+                      </div>
+                      
+                      <div class="grade_wrap">
+                       <div class="grade">
+                           <img src="images/8_5.jpg" alt="8.5점"></div>
+                       <div class="g_star4">          
+                           <img src="images/sub_star1.jpg" alt="별 4점"></div> 
+                      </div>     
+                      
+                  </div>
+                  
+                  <div class="smenu_b">
+                      <div class="more_info"><a href="http://www.ramadajejucity.com/index.php" target="_blank"><img src="images/more_view.jpg" alt="자세히보기"></a></div>
+                      <div class="price">
+                          <p>최저</p>
+                          <h2>￦147,000</h2>
+                          <p>(오늘 예약 시)</p>      
+                      </div>
+                  </div>
+               </div> 
+             </li> 
+             
+             <li>
+               <div class="photo"><a href="https://www.shillastay.com/haeundae/index.do" target="_blank"><img src="images/today_hotels2.jpg" alt="신라스테이 해운대"></a></div>
+               <div class="smenu_in">    
+                  <div class="smenu_t">
+                      <div class="txt">
+                          <h3>신라스테이 해운대</h3>
+                          <p>해운대구 해운대로570번길 46, 부산, 대한민국</p>
+                          <h4>훌륭한 가성비</h4>
+                      </div>
+                     <div class="grade_wrap">
+                      <div class="grade">
+                            <img src="images/8_6.jpg" alt="8.6점"></div>
+                      <div class="g_star4">   
+                              <img src="images/sub_star1.jpg" alt="별 4점"></div> 
+                      </div>
+                  </div>
+                  
+                  <div class="smenu_b">
+                      <div class="more_info"><a href="https://www.shillastay.com/haeundae/index.do" target="_blank"><img src="images/more_view.jpg" alt="자세히보기"></a></div>
+                      <div class="price">
+                          <p>최저</p>
+                          <h2>￦182,400</h2>
+                          <p>(오늘 예약 시)</p>      
+                      </div>
+                  </div>
+               </div> 
+             </li> 
+             
+             <li>
+                 <div class="photo"><a href="http://www.conradseoul.co.kr/" target="_blank"><img src="images/today_hotels3.jpg" alt="콘래드 서울 호텔"></a></div>
+               <div class="smenu_in">    
+                  <div class="smenu_t">
+                      <div class="txt">
+                          <h3>콘래드 서울 호텔</h3>
+                          <p>국제금융로 10, 영등포구, 서울, 대한민국</p>
+                          <h4>훌륭한 가성비</h4>
+                      </div>
+                      
+                      <div class="grade_wrap">
+                      <div class="grade">
+                           <img src="images/8_2.jpg" alt="8.2점"></div>
+                      <div class="g_star4">     
+                           <img src="images/sub_star1.jpg" alt="별 4점"></div> 
+                      </div>
+                  </div>
+                  
+                  <div class="smenu_b">
+                      <div class="more_info"><a href="http://www.conradseoul.co.kr/" target="_blank"><img src="images/more_view.jpg" alt="자세히보기"></a></div>
+                      <div class="price">
+                          <p>최저</p>
+                          <h2>￦156,000</h2>
+                          <p>(오늘 예약 시)</p>      
+                      </div>
+                  </div>
+               </div> 
+             </li> 
+             
+             <li>
+                 <div class="photo"><a href="http://www.centralparkhotel.co.kr/kor/index.do" target="_blank"><img src="images/today_hotels4.jpg" alt="송도 센트럴 파크 호텔"></a></div>
+               <div class="smenu_in">    
+                  <div class="smenu_t">
+                      <div class="txt">
+                          <h3>송도 센트럴 파크 호텔</h3>
+                          <p>연수구 테크노파크로 193, 인천, 대한민국</p>
+                          <h4>훌륭한 가성비</h4>
+                      </div>
+                      <div class="grade_wrap">
+                      <div class="grade">
+                           <img src="images/8_1.jpg" alt="8.1점"></div>
+                      <div class="g_star3">     
+                           <img src="images/sub_star2.jpg" alt="별 3점"></div> 
+                      </div> 
+                  </div>
+                  
+                  <div class="smenu_b">
+                      <div class="more_info"><a href="http://www.centralparkhotel.co.kr/kor/index.do" target="_blank"><img src="images/more_view.jpg" alt="자세히보기"></a></div>
+                      <div class="price">
+                          <p>최저</p>
+                          <h2>￦97,000</h2>
+                          <p>(오늘 예약 시)</p>      
+                      </div>
+                  </div>
+               </div> 
+             </li> 
+             
+             <li>
+                 <div class="photo"><a href="http://www.westernlife.co.kr/" target="_blank"><img src="images/today_hotels5.jpg" alt="웨스턴라이프호텔"></a></div>
+               <div class="smenu_in">    
+                  <div class="smenu_t">
+                      <div class="txt">
+                          <h3>웨스턴라이프호텔</h3>
+                          <p>약촌로10길 18-3, 익산시, 익산, 대한민국</p>
+                          <h4>훌륭한 가성비</h4>
+                      </div>
+                      <div class="grade_wrap">
+                      <div class="grade">
+                           <img src="images/7_9.jpg" alt="7.9점"></div>
+                      <div class="g_star3">    
+                           <img src="images/sub_star2.jpg" alt="별 3점"></div>  
+                      </div>
+                  </div>
+                  
+                  <div class="smenu_b">
+                      <div class="more_info"><a href="http://www.westernlife.co.kr/" target="_blank"><img src="images/more_view.jpg" alt="자세히보기"></a></div>
+                      <div class="price">
+                          <p>최저</p>
+                          <h2>￦69,000</h2>
+                          <p>(오늘 예약 시)</p>      
+                      </div>
+                  </div>
+               </div> 
+             </li> 
+             
+             <li>
+                 <div class="photo"><a href="https://www.ambatel.com/grand/seoul/ko/main.do" target="_blank"><img src="images/today_hotels6.jpg" alt="그랜드 앰배서더 서울"></a></div>
+               <div class="smenu_in">    
+                  <div class="smenu_t">
+                      <div class="txt">
+                          <h3>그랜드 앰배서더 서울</h3>
+                          <p>동호로 287, 중구, 서울, 대한민국</p>
+                          <h4>훌륭한 가성비</h4>
+                      </div>
+                      <div class="grade_wrap">
+                      <div class="grade">
+                           <img src="images/8_3.jpg" alt="8.3점"></div>
+                      <div class="g_star4">    
+                           <img src="images/sub_star1.jpg" alt="별 4점"></div>   
+                      </div> 
+                  </div>
+                  
+                  <div class="smenu_b">
+                      <div class="more_info"><a href="https://www.ambatel.com/grand/seoul/ko/main.do" target="_blank"><img src="images/more_view.jpg" alt="자세히보기"></a></div>
+                      <div class="price">
+                          <p>최저</p>
+                          <h2>￦120,000</h2>
+                          <p>(오늘 예약 시)</p>      
+                      </div>
+                  </div>
+               </div> 
+             </li> 
+             
+          </ul>
+      </section>
+      
+      
+      <div class="more"><a href="#"><img src="images/more.jpg" alt="더보기"></a></div>
+      
+      
+      
+      <section class="sub_menu">
+          <div class="hotdeal"><img src="images/hotdeal.jpg" alt="핫 딜"></div>
+          
+          <ul class="smenu_wrap">
+            
+             <li>
+               <div class="photo"><a href="http://www.greyhotel.co.kr/svc/" target="_blank"><img src="images/hotdeal_hotels1.jpg" alt="강릉 그레이호텔"></a></div>
+               <div class="smenu_in">    
+                  <div class="smenu_t">
+                      <div class="txt">
+                          <h3>강릉 그레이호텔</h3>
+                          <p>강릉 하슬라로192번길 6, 강원도, 대한민국</p>
+                          <h4>훌륭한 가성비</h4>
+                      </div>
+                      
+                      <div class="grade_wrap">
+                       <div class="grade">
+                           <img src="images/8_5.jpg" alt="8.5점"></div>
+                       <div class="g_star4">          
+                           <img src="images/sub_star1.jpg" alt="별 4점"></div> 
+                      </div>     
+                      
+                  </div>
+                  
+                  <div class="smenu_b">
+                      <div class="more_info"><a href="http://www.greyhotel.co.kr/svc/" target="_blank"><img src="images/more_view.jpg" alt="자세히보기"></a></div>
+                      <div class="price">
+                          <p>최저</p>
+                          <h2>￦47,000</h2>
+                          <p>(오늘 예약 시)</p>      
+                      </div>
+                  </div>
+               </div> 
+             </li> 
+             
+             <li>
+               <div class="photo"><a href="https://www.ambatel.com/mercure/hongdae/ko/main.do" target="_blank"><img src="images/hotdeal_hotels2.jpg" alt="머큐어 앰배서더 서울 홍대"></a></div>
+               <div class="smenu_in">    
+                  <div class="smenu_t">
+                      <div class="txt">
+                          <h3>머큐어 앰배서더 서울 홍대</h3>
+                          <p>마포구 양화로 144, 서울, 대한민국</p>
+                          <h4>훌륭한 가성비</h4>
+                      </div>
+                     <div class="grade_wrap">
+                      <div class="grade">
+                            <img src="images/8_5.jpg" alt="8.5점"></div>
+                      <div class="g_star4">   
+                              <img src="images/sub_star1.jpg" alt="별 4점"></div> 
+                      </div>
+                  </div>
+                  
+                  <div class="smenu_b">
+                      <div class="more_info"><a href="https://www.ambatel.com/mercure/hongdae/ko/main.do" target="_blank"><img src="images/more_view.jpg" alt="자세히보기"></a></div>
+                      <div class="price">
+                          <p>최저</p>
+                          <h2>￦79,000</h2>
+                          <p>(오늘 예약 시)</p>      
+                      </div>
+                  </div>
+               </div> 
+             </li> 
+             
+             <li>
+                 <div class="photo"><a href="http://www.airporthotel.co.kr/kr/" target="_blank"><img src="images/hotdeal_hotels3.jpg" alt="베스트웨스턴 인천에어포트 호텔"></a></div>
+               <div class="smenu_in">    
+                  <div class="smenu_t">
+                      <div class="txt">
+                          <h3>베스트웨스턴 인천에어포트 호텔</h3>
+                          <p>중구 공항로424번길 48-27, 인천, 대한민국</p>
+                          <h4>훌륭한 가성비</h4>
+                      </div>
+                      
+                      <div class="grade_wrap">
+                      <div class="grade">
+                           <img src="images/8_1.jpg" alt="8.1점"></div>
+                      <div class="g_star4">     
+                           <img src="images/sub_star1.jpg" alt="별 4점"></div> 
+                      </div>
+                  </div>
+                  
+                  <div class="smenu_b">
+                      <div class="more_info"><a href="http://www.airporthotel.co.kr/kr/" target="_blank"><img src="images/more_view.jpg" alt="자세히보기"></a></div>
+                      <div class="price">
+                          <p>최저</p>
+                          <h2>￦59,800</h2>
+                          <p>(오늘 예약 시)</p>      
+                      </div>
+                  </div>
+               </div> 
+             </li> 
+             
+             <li>
+                 <div class="photo"><a href="https://maisongladjeju-hotels.com/" target="_blank"><img src="images/hotdeal_hotels4.jpg" alt="메종 글래드 제주"></a></div>
+               <div class="smenu_in">    
+                  <div class="smenu_t">
+                      <div class="txt">
+                          <h3>메종 글래드 제주</h3>
+                          <p>노연로 80, 제주, 대한민국</p>
+                          <h4>훌륭한 가성비</h4>
+                      </div>
+                      <div class="grade_wrap">
+                      <div class="grade">
+                           <img src="images/8_2.jpg" alt="8.2점"></div>
+                      <div class="g_star3">     
+                           <img src="images/sub_star2.jpg" alt="별 3점"></div> 
+                      </div> 
+                  </div>
+                  
+                  <div class="smenu_b">
+                      <div class="more_info"><a href="https://maisongladjeju-hotels.com/" target="_blank"><img src="images/more_view.jpg" alt="자세히보기"></a></div>
+                      <div class="price">
+                          <p>최저</p>
+                          <h2>￦97,000</h2>
+                          <p>(오늘 예약 시)</p>      
+                      </div>
+                  </div>
+               </div> 
+             </li> 
+             
+             <li>
+                 <div class="photo"><a href="https://www.fourseasons.com/kr/seoul/" target="_blank"><img src="images/hotdeal_hotels5.jpg" alt="포시즌스 호텔 서울 "></a></div>
+               <div class="smenu_in">    
+                  <div class="smenu_t">
+                      <div class="txt">
+                          <h3>포시즌스 호텔 서울 </h3>
+                          <p>종로구 새문안로 97, 서울, 대한민국</p>
+                          <h4>훌륭한 가성비</h4>
+                      </div>
+                      <div class="grade_wrap">
+                      <div class="grade">
+                           <img src="images/8_5.jpg" alt="8.5점"></div>
+                      <div class="g_star4">    
+                           <img src="images/sub_star1.jpg" alt="별 4점"></div>  
+                      </div>
+                  </div>
+                  
+                  <div class="smenu_b">
+                      <div class="more_info"><a href="https://www.fourseasons.com/kr/seoul/" target="_blank"><img src="images/more_view.jpg" alt="자세히보기"></a></div>
+                      <div class="price">
+                          <p>최저</p>
+                          <h2>￦82,900</h2>
+                          <p>(오늘 예약 시)</p>      
+                      </div>
+                  </div>
+               </div> 
+             </li> 
+             
+             <li>
+                 <div class="photo"><a href="https://www.hoteltoscana.co.kr/" target="_blank"><img src="images/hotdeal_hotels6.jpg" alt="호텔 토스카나"></a></div>
+               <div class="smenu_in">    
+                  <div class="smenu_t">
+                      <div class="txt">
+                          <h3>호텔 토스카나</h3>
+                          <p>용흥로66번길 158-7, 서귀포, 제주도, 대한민국</p>
+                          <h4>훌륭한 가성비</h4>
+                      </div>
+                      <div class="grade_wrap">
+                      <div class="grade">
+                           <img src="images/8_1.jpg" alt="8.1점"></div>
+                      <div class="g_star4">    
+                           <img src="images/sub_star1.jpg" alt="별 4점"></div>   
+                      </div> 
+                  </div>
+                  
+                  <div class="smenu_b">
+                      <div class="more_info"><a href="https://www.hoteltoscana.co.kr/" target="_blank"><img src="images/more_view.jpg" alt="자세히보기"></a></div>
+                      <div class="price">
+                          <p>최저</p>
+                          <h2>￦75,000</h2>
+                          <p>(오늘 예약 시)</p>      
+                      </div>
+                  </div>
+               </div> 
+             </li> 
+             
+             
+          </ul>
+                             
+          
+      </section>
+      
+      <div class="more"><a href="#"><img src="images/more.jpg" alt="더보기"></a></div>
+      
+    
+      <footer>
+        <div class="f_wrap">
+           <ul class="f_nav">
+              <li><a href="#">회사정보</a></li>
+              <li><a href="#">연락처</a></li>
+              <li><a href="#">더보기</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">쿠키정책</a></li>
+              <li><a href="#">사이트/통화</a></li>
+           </ul>
+        </div> 
+         
+         
+         
+          <div class="box_center">
+              <div class="company">
+                  <div class="com1"><a href="https://www.booking.com/index.ko.html?aid=373003;label=naver-brand-pc-list3" target="_blank"><img src="images/booking_com.png" alt="부킹컴"></a></div>
+                  <div class="com2"><a href="https://www.kayak.co.kr/?ispredir=true" target="_blank"><img src="images/kayak.png" alt="카약"></a></div>
+                  <div class="com3"><a href="https://www.opentable.com/" target="_blank"><img src="images/opentable.png" alt="오픈1테이블"></a></div>
+                  <div class="com4"><a href="https://www.priceline.com/?vrid=c34a29b296d3f64193fb425410328f55" target="_blank"><img src="images/priceline.png" alt="프라이스 라인"></a></div>
+                  <div class="com5"><a href="https://www.agoda.com/ko-kr/?cid=1719676" target="_blank"><img src="images/agoda.png" alt="아고다"></a></div>
+                  <div class="com6"><a href="https://www.rentalcars.com/?affiliateCode=naver&preflang=ko&label=rentalcars.com-brand" target="_blank"><img src="images/rentalcars.png" alt="렌터카"></a></div>
+              </div> 
+          </div>
+          
+          
+          <div class="txt">
+              <p>ⓒ2021 HotelsCombined</p>              
+              <p>KAYAK에서 저가 호텔을 검색하세요. 전 세계 주요 여행지의 저가 호텔 상품을 만나보세요. KAYAK은 수백 개의 호텔 사이트를 검색하여, 고객님께서 본인에게 딱 맞는 호텔 상품을 찾아 예약하실 수 있도록<br>도와드립니다.  KAYAK이 다양한 호텔 사이트를 한 번에 검색하기 때문에, 할인 호텔 상품을 신속하게 찾으실 수 있습니다. 호텔 할인 정보를 확인하고 호텔 예약을 지금 바로 마치세요.</p>
+              
+              <ul class="f_sns">
+              <li><a href="https://www.facebook.com/HotelsCombinedKorea" target="_blank">
+                  <img src="images/f_facebook.png" alt="페이스북">
+              </a></li>
+              <li><a href="https://www.instagram.com/hotelscombined.kr/" target="_blank">
+                  <img src="images/f_insta.png" alt="인스타그램">
+              </a></li>
+              <li><a href="https://www.youtube.com/channel/UC4Kx7cwhzWMT8o1jSkw1U4Q" target="_blank"><img src="images/f_youtube.png" alt="유투브"></a></li>
+              <li><a href="http://blog.naver.com/hotelscombnd" target="_blank"><img src="images/f_twitter.png" alt="트위터"></a></li>
+              </ul>
+              
+          </div>
+               
+         <div class="txt2">       
+          <p>호텔스컴바인은 세계적인 온라인 여행 기업 ‘부킹홀딩스(Booking Holdings Inc.)’의 그룹사입니다.</p>
+         </div>          
+      </footer>
+      
+   </div> 
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
