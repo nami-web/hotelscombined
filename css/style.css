@@ -143,7 +143,7 @@ background-color:#f4f4f4; width: 150px;}
 
 
 /* menu */
-.menu{width: 100%; background-image: url(../images/background.png);  background-position: center; background-size: cover; background-repeat: no-repeat;
+.menu{width: 100%; background-image: url(https://cdn.jsdelivr.net/gh/nami-web/hotelscombined/images/background.png);  background-position: center; background-size: cover; background-repeat: no-repeat;
 height: 1050px; margin-bottom: 70px;}
 .menu .menu_wrap{width: 920px; margin: 0 auto; position: relative;}
 .menu .box_center h1{width: 152px; margin: 0 auto; margin-bottom: 45px; }
